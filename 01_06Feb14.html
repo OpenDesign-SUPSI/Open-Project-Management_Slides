@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Open Project Management: Setup for Network Analysis</title>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/supsi.css" id="theme">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+		
+		<link rel="icon" href="http://www.maind.supsi.ch/Master_Interaction_Design-favicon.jpg" type="image/x-icon" />
+                <link rel="shortcut icon" href="http://www.maind.supsi.ch/Master_Interaction_Design-favicon.jpg" type="image/x-icon" />
+		
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Open Project Management</h1>
+					<h3>06 February 2014</h3>
+				</section>
+				
+				<section>
+					<h3>1. Mac Setup</h3>
+					<h3>2. Windows Setup</h3>
+				</section>
+				
+				<section>
+					<h1>1. Mac Setup</h1>
+				</section>
+				
+				<section>
+					<h2>Setup #01: Xcode</h2>
+					<ul>
+						<li>Install <a href="https://developer.apple.com/xcode/">Xcode</a></li>
+						<li>Install <a href="http://developer.apple.com/downloads">Command Line Tools for Xcode</a></li>
+					</ul>
+					<p class="source">Source: <a href="http://penandpants.com/2012/02/24/install-python/">http://penandpants.com/2012/02/24/install-python/</a></p>
+				</section>
+				
+				<section>
+					<h2>Setup #02: Homebrew</h2>
+					<ul>
+						<li>Install <a href="http://brew.sh/">Homebrew</a>:<br>
+						</li>
+					</ul>
+					<pre><code data-trim class="python">
+  					ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					brew doctor
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					brew update
+  					</code></pre>
+					<p class="source">Source: <a href="http://penandpants.com/2012/02/24/install-python/">http://penandpants.com/2012/02/24/install-python/</a></p>
+				</section>
+				
+				<section>
+					<h2>Setup #03: Homebrew</h2>
+					<ul>
+						<li>Fix path:<br>
+						</li>
+					</ul>
+					<pre><code data-trim class="python">
+  					vim ~/.bash_profile
+  					</code></pre>
+  					<ul>
+						<li>Add this and save:<br>
+						</li>
+					</ul>
+  					<pre><code data-trim class="python">
+  					# Set architecture flags
+export ARCHFLAGS="-arch x86_64"
+# Ensure user-installed binaries take precedence
+export PATH=/usr/local/bin:$PATH
+# Load .bashrc if it exists
+test -f ~/.bashrc && source ~/.bashrc
+  					</code></pre>
+  					<ul>
+						<li>Execute:<br>
+						</li>
+					</ul>
+  					<pre><code data-trim class="python">
+  					. ~/.bash_profile
+  					</code></pre>
+  					
+					<p class="source">Source: <a href="http://hackercodex.com/guide/mac-osx-mavericks-10.9-configuration/">http://hackercodex.com/guide/mac-osx-mavericks-10.9-configuration/</a></p>
+				</section>
+				
+				<section>
+					<h2>Setup #03: Python</h2>
+					<ul>
+						<li>Install Python:<br>
+						</li>
+					</ul>
+					<pre><code data-trim class="python">
+  					brew install python
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					which python
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					easy_install pip
+  					</code></pre>
+					<p class="source">Source: <a href="http://penandpants.com/2012/02/24/install-python/">http://penandpants.com/2012/02/24/install-python/</a></p>
+				</section>
+				
+				<section>
+					<h2>Setup #04: Python libraries</h2>
+					<ul>
+						<li>Install Python libraries:<br>
+						</li>
+					</ul>
+					<pre><code data-trim class="python">
+  					pip install numpy
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					brew install gfortran
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					pip install scipy
+  					</code></pre>
+					<p class="source">Source: <a href="http://penandpants.com/2012/02/24/install-python/">http://penandpants.com/2012/02/24/install-python/</a></p>
+				</section>
+				
+				<section>
+					<h2>Setup #05: Python libraries</h2>
+					<ul>
+						<li>Install Python libraries:<br>
+						</li>
+					</ul>
+					<pre><code data-trim class="python">
+  					brew install freetype
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					brew install libpng
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					brew link freetype
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					pip install git+https://github.com/matplotlib/matplotlib.git#egg=matplotlib-dev
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					pip install networkx
+  					</code></pre>
+					<p class="source">Source: <a href="http://penandpants.com/2012/02/24/install-python/">http://penandpants.com/2012/02/24/install-python/</a> - <a href="http://stackoverflow.com/questions/12910126/errors-installing-matplotlib-clang">http://stackoverflow.com/questions/12910126/errors-installing-matplotlib-clang</a></p>
+				</section>
+				
+				<section>
+					<h2>Setup #06: Java + Gephi</h2>
+					<ul>
+						<li>For Mavericks: Install this Java update: <a href="http://support.apple.com/kb/DL1572">JavaForOSX2013-05.dmg</a><br>
+						</li>
+						<li>Install <a href="http://gephi.org/">Gephi</a> and open it: is everything ok?</li>
+						<li>Still problems with Gephi? Check <a href="http://forum.gephi.org/viewtopic.php?f=24&t=3034&start=10#p9570">this</a> and <a href="https://github.com/gephi/gephi/issues/748#issuecomment-21842701">this</a></li>
+					</ul>
+				</section>
+				
+				<section>
+					<h1>2. Windows Setup</h1>
+				</section>
+				
+				<section>
+					<h2>Setup #01: Python</h2>
+					<ul>
+						<li>Install <a href="http://python.org/download/">Python 2.7.6</a></li>
+					</ul>
+					<p class="source">Source: <a href="http://adesquared.wordpress.com/2013/07/07/setting-up-python-and-easy_install-on-windows-7/">http://adesquared.wordpress.com/2013/07/07/setting-up-python-and-easy_install-on-windows-7/</a></p>
+				</section>
+				
+				<section>
+					<h2>Setup #02: Python: Path</h2>
+					<a href=""><img src="images/pythonwin.jpg">
+					</a>
+					<p class="source">Source: <a href="http://adesquared.wordpress.com/2013/07/07/setting-up-python-and-easy_install-on-windows-7/">http://adesquared.wordpress.com/2013/07/07/setting-up-python-and-easy_install-on-windows-7/</a></p>
+				</section>
+				
+				<section>
+					<h2>Setup #03: Python Easy_install + Pip</h2>
+					<ul>
+						<li>Install <a href="https://pypi.python.org/pypi/setuptools#windows">easy_install</a>:</li>
+					</ul>
+					<pre><code data-trim class="python">
+  					python ez_setup.py install
+  					</code></pre>
+  					<ul>
+						<li>Install <a href="http://www.pip-installer.org/en/latest/installing.html">pip</a>:</li>
+					</ul>
+					<pre><code data-trim class="python">
+  					easy_install pip
+  					</code></pre>
+					<p class="source">Source: <a href="http://adesquared.wordpress.com/2013/07/07/setting-up-python-and-easy_install-on-windows-7/">http://adesquared.wordpress.com/2013/07/07/setting-up-python-and-easy_install-on-windows-7/</a></p>
+				</section>
+				
+				<section>
+					<h2>Setup #04: Python libraries</h2>
+					<ul>
+						<li>Install Python libraries:<br>
+						</li>
+					</ul>
+					<pre><code data-trim class="python">
+  					pip install numpy
+  					</code></pre>
+  					<pre><code data-trim class="python">
+  					pip install scipy
+  					</code></pre>
+  					<ul>
+						<li>Install <a href="http://matplotlib.org/faq/installing_faq.html">matplotlib</a><br>
+						</li>
+					</ul>
+  					<pre><code data-trim class="python">
+  					pip install networkx
+  					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Setup #05: Java + Gephi</h2>
+					<ul>
+						<li>Install <a href="http://www.java.com/en/download/">Java</a><br>
+						</li>
+						<li>Install <a href="http://gephi.org/">Gephi</a> and open it: is everything ok?</li>
+					</ul>
+				</section>
+				
+
+				<section>
+					<h1>Thank you!</h1>
+					<p>
+						<small><a href="http://openp2pdesign.org">Massimo Menichinelli</a> / <a href="mailto:info@openp2pdesign.org">info@openp2pdesign.org</a> / <a href="http://twitter.com/openp2pdesign">@openp2pdesign</a></small>
+					</p>
+				</section>
+
+			</div>
+
+<div class="credits">
+	<div class="license">
+  		<p style="font-size: 12px !important;">
+		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
+		</p>
+		<p style="font-size: 12px !important;">Massimo Menichinelli - 2013<br>
+		<a href="http://openp2pdesign.org">openp2pdesign.org</a></p>
+	</div>
+	<div class="supsi">
+		<a href="http://www.maind.supsi.ch/">
+		<img src="css/theme/images/supsi.jpg">
+		</a>
+	</div>
+</div>
+
+		</div>
+		
+		
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+
+
+	</body>
+</html>
