@@ -155,13 +155,17 @@
 				</section>
 				
 				<section>
-					<h2>Network: the concept</h2>
+					<h2>Core/periphery structure</h2>
 					<p>
-					
+					Core/periphery structures are the simplest forms of network segmentation.<br>
+Cores possess whatever attributes are most valued by the network. The network is about relationships and flows, not about the attributes of the nodes. This proposition says that in core/periphery structures the valuation of the attributes is related to the structure.
 					</p>
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
 				</section>
+				
+				
+				
 				
 				<section>
 					<h2>Network: the concept</h2>
@@ -236,11 +240,127 @@
 				</section>
 				
 				<section>
-					<h2>Network: the concept</h2>
+					<h2>Centrality: the importance of nodes</h2>
 					<p>
-					
+					Centrality is one of the core principles of network analysis. It measures how “central” a node is in the network. This is used as an estimate of its importance in the network. However, depending on the application and point of view, what counts as “central” may vary depending on the context. Correspondingly, there are a number of ways to measure centrality of a node. 
+<br><br>
+A node may appear highly central with one measure but have low centrality with another. That does not mean one measure is incorrect, though; they are simply different ways of describing nodes. The interpretation of the centrality measures is left to a human analyst.
+<br><br>
+Also, the measures below are calculated for undirected, unweighted graphs. When working with directed or weighted networks, these measures require modification. This has significant implications for how the values are interpreted. 
 					</p>
-					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
+					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
+</p>
+				</section>
+				
+				<section>
+					<h2>Centrality: Degree</h2>
+					<p>
+					Many network properties describe how nodes are connected to one another and to the network as a whole. The simplest of these is degree. The degree of a node is the number of edges connected to that node. In undirected graphs, the degree of a node is simply the total number of edges connected to it. In directed graphs, there are two measures of degree: in-degree and out-degree. The in-degree is given by the number of edges coming into the node. In network diagrams, in-degrees are shown as edges with arrows pointing at the node. The out-degree is the number of edges originating from the node going outward to other nodes. These are shown with arrows pointing away from the node. The sum of the in-degree and out-degree gives you the total degree for the node.
+<br><br>
+Degree centrality is a good measure of the total connections a node has, but will not necessarily indicate the importance of a node in connecting others or how central it is to the main group.
+					</p>
+					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
+</p>
+				</section>
+				
+				<section>
+					<h2>Centrality: Closeness</h2>
+					<p>
+					Closeness centrality indicates how close a node is to all other nodes in the network. It is calculated as the average of the shortest path length from the node to every other node in the network.
+<br><br>
+The benefits of closeness centrality are that it indicates nodes as more central if they are closer to most of the nodes in the graph. This strongly corresponds to visual centrality—a node that would appear toward the center of a graph when we draw it usually has a high closeness centrality.
+					</p>
+					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
+</p>
+				</section>
+				
+				<section>
+					<h2>Centrality: Betweenness</h2>
+					<p>
+					Betweenness centrality measures how important a node is to the shortest paths through the network. [...]It captures how important a node is in the flow of information from one part of the network to another.<br><br>
+In directed networks, betweenness can have several meanings. A user with high betweenness may be followed by many others who don’t follow the same people as the user. This would indicate that the user is well-followed. Alternatively, the user may have fewer followers, but connect them to many accounts that are otherwise distant. This would indicate that the user is a reader of many people. Understanding the direction of the edges for a node is important to understand the meaning of centrality.
+					</p>
+					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
+</p>
+				</section>
+				
+				<section>
+					<h2>Centrality: Eigenvector</h2>
+					<p>
+					Eigenvector centrality measures a node’s importance while giving consideration to the importance of its neighbors. [...] It is sometimes used to measure a node’s influence in the network.<br><br>
+The main principle is that links from important nodes (as measured by degree centrality) are worth more than links from unimportant nodes.
+					</p>
+					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
+</p>
+				</section>
+				
+				<section>
+					<h2>Centrality: Eccentricity</h2>
+					<p>
+					The eccentricity measure captures the distance between a node and the node that is furthest from it; so a high eccentricity means that the furthest away node in the network is a long way away, and a low eccentricity means that the furthest away node is actually quite close.
+					</p>
+					<p class="source">Source: <a href="http://blog.ouseful.info/2010/05/10/getting-started-with-gephi-network-visualisation-app-%E2%80%93-my-facebook-network-part-iii-ego-filters-and-simple-network-stats/">http://blog.ouseful.info/2010/05/10/getting-started-with-gephi-network-visualisation-app-%E2%80%93-my-facebook-network-part-iii-ego-filters-and-simple-network-stats/</a>
+</p>
+				</section>
+				
+				<section>
+					<h2>Centrality in Software libraries: NetworkX</h2>
+					<ul>
+						<li>Degree</li>
+						<li>Closeness</li>
+						<li>Betweenness</li>
+						<li>Current Flow Closeness</li>
+						<li>Current-Flow Betweenness</li>
+						<li>Eigenvector</li>
+						<li>Communicability</li>
+						<li>Load</li>
+						<li>... + other measures</li>
+					</ul>
+					<p class="source">Source: <a href="http://networkx.github.io/documentation/latest/reference/algorithms.centrality.html?highlight=centrality">http://networkx.github.io/documentation/latest/reference/algorithms.centrality.html?highlight=centrality</a>
+</p>
+				</section>
+				
+				<section>
+					<h2>Centrality in Software libraries: graph-tool</h2>
+					<ul>
+						<li>Degree</li>
+						<li>Closeness</li>
+						<li>Betweenness</li>
+						<li>Central Point Dominance</li>
+						<li>Pagerank</li>
+						<li>Eigenvector</li>
+						<li>Katz</li>
+						<li>Hits</li>
+						<li>Eigentrust</li>
+						<li>Trust Transitivity</li>
+						<li>... + other measures</li>
+					</ul>
+					<p class="source">Source: <a href="http://graph-tool.skewed.de/static/doc/centrality.html">http://graph-tool.skewed.de/static/doc/centrality.html</a>
+</p>
+				</section>
+				
+				<section>
+					<h2>Centrality in Software libraries: Gephi</h2>
+					<ul>
+						<li>Degree</li>
+						<li>Degree Power Law</li>
+						<li>Closeness</li>
+						<li>Connected components</li>
+						<li>Betweenness</li>
+						<li>Eccentricity</li>
+						<li>Pagerank</li>
+						<li>Eigenvector</li>
+						<li>Hits</li>
+						<li>... + other measures</li>
+					</ul>
+					<p class="source">Source: <a href="http://wiki.gephi.org/index.php/Category:Measure">http://wiki.gephi.org/index.php/Category:Measure</a>
+</p>
+				</section>
+				
+				<section>
+					<h2>Software: Gephi</h2>
+					<iframe src="http://player.vimeo.com/video/9726202" width="710" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/9726202">Introducing Gephi 0.7</a> from <a href="http://vimeo.com/gephi">gephi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+					<p class="source">Source: <a href="http://vimeo.com/9726202#embed">http://vimeo.com/9726202#embed</a>
 </p>
 				</section>
 				
