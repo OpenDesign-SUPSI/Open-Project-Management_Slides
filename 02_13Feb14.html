@@ -82,16 +82,9 @@
 				
 				<section>
 					<h2>A community</h2>
-					<a href="https://www.facebook.com/groups/fabberintialia/members/"><img src="images/community00.jpg">
+					<a href="https://www.facebook.com/groups/fabberintialia/members/"><img src="images/community01.jpg">
 					</a>
 					<p class="source">Source: <a href="https://www.facebook.com/groups/fabberintialia/members/">https://www.facebook.com/groups/fabberintialia/members/</a></p>
-				</section>
-				
-				<section>
-					<h2>A community and its map(s)</h2>
-					<a href="http://www.openp2pdesign.org/2013/social-network-analysis/mappando-la-comunita-italiana-di-makers-e-fabbing/"><img src="images/community01.jpg">
-					</a>
-					<p class="source">Source: <a href="http://www.openp2pdesign.org/2013/social-network-analysis/mappando-la-comunita-italiana-di-makers-e-fabbing/">http://www.openp2pdesign.org/2013/social-network-analysis/mappando-la-comunita-italiana-di-makers-e-fabbing/</a></p>
 				</section>
 				
 				<section>
@@ -125,19 +118,81 @@
 				<section>
 					<h2>Network: the concept</h2>
 					<p>
-					a network is a set of relationships. More formally, a network contains a set of objects (in mathematical terms, nodes) and a mapping or description of relations between the objects or nodes. The simplest network contains two objects and one relationship that links them.
+					a network is a set of <strong>relationships</strong>. More formally, a network contains a set of objects (in mathematical terms, <strong>nodes</strong>) and a mapping or description of relations between the objects or nodes (<strong>edges</strong>). The simplest network contains two objects and one relationship that links them.
 					</p>
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
 				</section>
 				
 				<section>
-					<h2>Network types by analysis</h2>
-					<ul>
-					<li><strong>Ego-centric</strong> networks are those networks that are connected with a single node or individual.</li>
-<li><strong>Socio-centric networks</strong> are networks in a “box.” Connections between children in a classroom or between executives or workers in an organization are closed system networks and the ones most often studied in terms of the fine points of network structure.</li>
-<li><strong>Open system networks</strong> are networks in which the boundaries are not necessarily clear.</li>
-					</ul>
+					<h2>Network: graph</h2>
+					<p>
+					Alice ----- knows ----- Bob
+					</p>
+				</section>
+				
+				<section>
+					<h2>Network: direct graph</h2>
+					<p>
+					Alice ----- likes -----> Bob
+					</p>
+				</section>
+				
+				<section>
+					<h2>Network: direct graph</h2>
+					<p>
+					Alice <----- loves -----> Bob
+					</p>
+				</section>
+				
+				<section>
+					<h2>Network: multi (directed) graph</h2>
+					<p>
+					Alice ----- pays -----> Bob<br>
+						  ----- pays ----->  <br>
+						  ----- pays ----->
+					</p>
+				</section>
+				
+				<section>
+					<h2>Network: signed graph</h2>
+					<p>
+					Alice ----- likes -----> Bob<br>
+								  +
+					</p>
+				</section>
+				
+				<section>
+					<h2>Network: weighted graph</h2>
+					<p>
+					Alice ----- likes -----> Bob<br>
+								  12
+					</p>
+				</section>
+				
+				<section>
+					<h2>Diad (undirected): 2 possibile connections</h2>
+					<ol>
+						<li>none at all (they are not connected)</li>
+						<li>A and B both relate to one another</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Diad (directed): 4 possibile connections</h2>
+					<ol>
+						<li>none at all (they are not connected)</li>
+						<li>A relates to B</li>
+						<li>B relates to A</li>
+						<li>A and B both relate to one another</li>
+					</ol>
+					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
+</p>
+				</section>
+				
+				<section>
+					<h2>Triads (directed): 16 possible connections</h2>
+					<img src="images/triad16.jpg">
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
 				</section>
@@ -169,23 +224,134 @@ Networks can be partitioned because whole networks are often difficult to grasp 
 </p>
 				</section>
 				
-				
-				
 				<section>
-					<h2>Directed graphs: possibile connections</h2>
-					<ol>
-						<li>none at all (they are not connected)</li>
-						<li>A relates to B</li>
-						<li>B relates to A</li>
-						<li>A and B both relate to one another</li>
-					</ol>
-					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
+					<h2>Describing networks: Adjacency Matrix</h2>
+					<a href="http://mathworld.wolfram.com/AdjacencyMatrix.html">
+					<img src="images/admatrix.jpg">
+					</a>
+					<p class="source">Source: Weisstein, Eric W. "Adjacency Matrix." From MathWorld--A Wolfram Web Resource. <a href="http://mathworld.wolfram.com/AdjacencyMatrix.html">http://mathworld.wolfram.com/AdjacencyMatrix.html</a>
 </p>
 				</section>
 				
 				<section>
-					<h2>Triads: 16 possible connections</h2>
-					<img src="images/triad16.jpg">
+					<h2>Describing networks: Adjacency Matrix</h2>
+					<a href="http://en.wikipedia.org/wiki/Adjacency_matrix">
+					<img src="images/admatrix01.jpg">
+					</a>
+					<p class="source">Source: Weisstein, Eric W. "Adjacency Matrix." From MathWorld--A Wolfram Web Resource. <a href="http://mathworld.wolfram.com/AdjacencyMatrix.html">http://mathworld.wolfram.com/AdjacencyMatrix.html</a>
+</p>
+				</section>
+				
+				<section>
+					<h2>Describing networks: Adjacency Matrix</h2>
+					<a href="http://bost.ocks.org/mike/miserables/">
+					<img src="images/admatrix02.jpg">
+					</a>
+					<p class="source">Source: <a href="http://bost.ocks.org/mike/miserables/">http://bost.ocks.org/mike/miserables/</a>
+</p>
+				</section>
+				
+				<section>
+					<h2>Network analysis: the process #01</h2>
+					<ol>
+						<li>define your questions</li>
+						<li>define nodes to be included</li>
+						<li>defines edges to be included</li>
+						<li>A and B both relate to one another</li>
+						<li>gather data with the chosen sampling strategy<br>
+							<ul>
+								<li>Link prediction is a method of analysis that detects where missing links should be present in the network.</li>
+								<li>Entity resolution is a technique for merging nodes that represent the same person, as we might do here</li>
+							</ul>
+						</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Network analysis: the process #02</h2>
+					<ol>
+						<li>refine data</li>
+						<li>calculate metrics</li>
+						<li>visualize data</li>
+						<li>filter data</li>
+						<li>...</li>
+					</ol>
+				</section>
+				
+				<section>
+					<h2>Sampling: Random</h2>
+					<p>
+					Randomly sampling a network means randomly selecting a percentage of the graph to be included in a sample. The benefit of random sampling is that it reduces the network to a smaller size in an even way, so a picture of the overall patterns of relationships and clusters can be seen. However, since edges and nodes are removed from every point in the network to make the sample, random sampling is less effective when an analyst wants to see a complete picture of the types of connections made at any point in the network.
+					</p>
+					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
+</p>
+				</section>
+				
+				<section>
+					<h2>Sampling: Snowball</h2>
+					<p>
+					Snowball sampling is a technique commonly used in sociology where participants are interviewed. In that context, interviewees are asked to refer the researchers to other people, who are then interviewed and asked for more references. The process continues until a researcher has interviewed enough people.
+<br><br>
+While snowball sampling is a relatively easy way to sample a network, the sample is considered biased since the nodes are all in the neighborhood of the seed node. Also, because the sampling stops when a certain number of edges or nodes are included, the network is usually full of nodes that have many neighbors who, in turn, have no connections because their neighbors were not collected.
+<br><br>
+A snowball sample, on the other hand, will show only a small part of the network, but it will show it completely, allowing the analyst to look at the local patterns of relationships and draw conclusions.
+					</p>
+					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
+</p>
+				</section>
+				
+				<section>
+					<h2>Snowball: Depth-First Traversal</h2>
+					<img src="images/dft.jpg">
+					<p class="source">Source: Tsvetovat, Maksim, and Alexander Kouznetsov. Social Network Analysis for Startups: Finding Connections on the Social Web. O’Reilly Media, 2011.</p>
+				</section>
+				
+				<section>
+					<h2>Snowball: Breadth-First Traversal</h2>
+					<img src="images/bft.jpg">
+					<p class="source">Source: Tsvetovat, Maksim, and Alexander Kouznetsov. Social Network Analysis for Startups: Finding Connections on the Social Web. O’Reilly Media, 2011.</p>
+				</section>
+				
+				<section>
+					<h2>Sampling: Egocentric</h2>
+					<p>
+					An alternative to sampling networks is to look at individuals in the network and analyze their egocentric networks. This method is useful both to understand features in a large network when the entire network is of interest and to select individuals who have specifically interesting traits.<br><br>
+When the entire network is of interest, an analyst may choose to look at randomly selected egocentric networks or the networks of individuals selected based on certain characteristics. For example, nodes with the highest centrality may be chosen and analyzed because they wield particular influence in the network.
+					</p>
+					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
+</p>
+				</section>
+				
+				<section>
+					<h2>Sampling: Egocentric with ego (1 degree)</h2>
+					<a href="http://www.openp2pdesign.org/2013/social-network-analysis/mining-the-social-networks-of-github/">
+					<img src="images/ego-network01.jpg">
+					</a>
+					<p class="source">Source: <a href="http://www.openp2pdesign.org/2013/social-network-analysis/mining-the-social-networks-of-github/">http://www.openp2pdesign.org/2013/social-network-analysis/mining-the-social-networks-of-github/</a>
+</p>
+				</section>
+				
+				<section>
+					<h2>Sampling: Egocentric with ego (2 degree)</h2>
+					<a href="http://www.openp2pdesign.org/2013/social-network-analysis/mining-the-social-networks-of-github/">
+					<img src="images/ego-network02.jpg">
+					</a>
+					<p class="source">Source: <a href="http://www.openp2pdesign.org/2013/social-network-analysis/mining-the-social-networks-of-github/">http://www.openp2pdesign.org/2013/social-network-analysis/mining-the-social-networks-of-github/</a>
+</p>
+				</section>
+				
+				<section>
+					<h2>Sampling: Egocentric without ego (1.5 degree)</h2>
+					<img src="images/mm-fb.jpg">
+				</section>
+
+				<section>
+					<h2>Network types by analysis</h2>
+					<ul>
+					<li><strong>Ego-centric</strong> networks are those networks that are connected with a single node or individual.</li>
+<li><strong>Socio-centric networks</strong> are networks in a “box.” Connections between children in a classroom or between executives or workers in an organization are closed system networks and the ones most often studied in terms of the fine points of network structure.</li>
+<li><strong>Open system networks</strong> are networks in which the boundaries are not necessarily clear.</li>
+					</ul>
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
 				</section>
