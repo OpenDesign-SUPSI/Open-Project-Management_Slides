@@ -43,7 +43,7 @@
 				
 				<section>
 					<h3>1. Basic Concepts of SNA</h3>
-					<h3>2. History of SNA</h3>
+					<h3>2. Network Science and SNA</h3>
 					<h3>3. Measurements in SNA</h3>
 					<h3>4. Layouts in SNA</h3>
 				</section>
@@ -357,7 +357,7 @@ When the entire network is of interest, an analyst may choose to look at randoml
 				</section>
 				
 				<section>
-					<h1>2. History of SNA</h1>
+					<h1>Network Science and SNA</h1>
 				</section>
 				
 				<section>
@@ -369,9 +369,67 @@ When the entire network is of interest, an analyst may choose to look at randoml
 				</section>
 				
 				<section>
+					<h2>Burt: Structural Holes</h2>
+					<a href="http://keg.cs.tsinghua.edu.cn/jietang/">
+					<img src="images/structural-hole.jpg">
+					</a>
+					<p class="source">Source: <a href="http://keg.cs.tsinghua.edu.cn/jietang/">http://keg.cs.tsinghua.edu.cn/jietang/</a></p>
+				</section>
+				
+				<section>
+					<h2>Granovetter: Weak - Strong ties</h2>
+					<a href="http://en.wikipedia.org/wiki/Interpersonal_ties">
+					<img src="images/weak-strong-ties.jpg">
+					</a>
+					<p class="source">Source: <a href="http://en.wikipedia.org/wiki/Interpersonal_ties">http://en.wikipedia.org/wiki/Interpersonal_tiesjietang/</a></p>
+				</section>
+				
+				<section>
+					<h2>Importance of weak ties</h2>
+					<ul>
+					<li>weak ties facilitate the flow of information from otherwise-distant parts of a network. Individuals with few weak ties will be deprived of information from the distant parts of the social system and will be confined to the provincial news and views of their close friends</li>
+<li>weak ties help to integrate social systems. The macroscopic side of this communication argument is that social systems lacking in weak ties will be fragmented and incoherent</li>
+					</ul>
+					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
+</p>
+				</section>
+				
+				<section>
+					<h2>Milgram: Six degrees of separation</h2>
+					<a href="http://en.wikipedia.org/wiki/Small_world_phenomenon">
+					<img src="images/milgram2.gif">
+					</a>
+					<p class="source">Source: <a href="http://en.wikipedia.org/wiki/Small_world_phenomenon">http://en.wikipedia.org/wiki/Small_world_phenomenon</a></p>
+				</section>
+				
+				<section>
+					<h2>Watts / Strogatz: Small world</h2>
+					<a href="http://en.wikipedia.org/wiki/Small_world_phenomenon">
+					<img src="images/smallworld.jpg">
+					</a>
+					<p class="source">Source: <a href="http://en.wikipedia.org/wiki/Small_world_phenomenon">http://en.wikipedia.org/wiki/Small_world_phenomenon</a> - <a href="http://www.urbagram.net/v1/print/Microplexes">http://www.urbagram.net/v1/print/Microplexes</a></p>
+				</section>
+				
+				<section>
 					<h2>Christakis: 3 degrees of influence</h2>
 					<iframe width="711" height="400" src="http://www.youtube.com/embed/2U-tOghblfE" frameborder="0" allowfullscreen></iframe>
 					<p class="source">Source: <a href="http://www.youtube.com/watch?v=2U-tOghblfE">http://www.youtube.com/watch?v=2U-tOghblfE</a></p>
+				</section>
+				
+				<section>
+					<h2>Barabasi: Scale free networks</h2>
+					<a href="http://en.wikipedia.org/wiki/Scale-free_network">
+					<img src="images/scalefree.jpg">
+					</a>
+					<p class="source">Source: <a href="http://en.wikipedia.org/wiki/Scale-free_network">http://en.wikipedia.org/wiki/Scale-free_network</a></p>
+				</section>
+				
+				<section>
+					<h2>Barabasi: Power law and scale free networks</h2>
+					<a href="http://www.cmswire.com/cms/social-business/foundations-of-social-rights-in-a-scalefree-world-021736.php">
+					<img src="images/powerlaw.jpg">
+					</a>
+					<p class="source">Source: <a href="http://www.cmswire.com/cms/social-business/foundations-of-social-rights-in-a-scalefree-world-021736.php">http://www.cmswire.com/cms/social-business/foundations-of-social-rights-in-a-scalefree-world-021736.php</a></p>
 				</section>
 				
 				<section>
@@ -383,7 +441,7 @@ When the entire network is of interest, an analyst may choose to look at randoml
 					<p>
 					Density—the number of edges in the graph divided by the number of possible edges—is one of the most common ways of describing a network.
 <br><br>
-Density describes how connected a network is. More formally, it is a statistic comparing the number of edges that exist in a network to the number of edges that could possibly exist. 
+Density describes <strong>how connected a network is</strong>. More formally, it is a statistic comparing the number of edges that exist in a network to the number of edges that could possibly exist. 
 					</p>
 					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
 </p>
@@ -399,7 +457,7 @@ Density describes how connected a network is. More formally, it is a statistic c
 				<section>
 					<h2>Density: possible/existing edges</h2>
 					<p>
-					A network with no edges would have a density of 0 (because the numerator in our equation would be 0, regardless of how many nodes there are). On the other hand, the densest possible network would be a network where all possible edges exist—a clique. As we just learned, the number of possible edges is the denominator of the density formula. In a clique, then, the numerator and denominator will be the same, so the density will be 1. This illustrates that density is always between 0 and 1, where 0 is the lowest possible density and 1 is the highest.
+					A network with no edges would have a density of 0 (because the numerator in our equation would be 0, regardless of how many nodes there are). On the other hand, the densest possible network would be a network where all possible edges exist—a clique. As we just learned, the number of possible edges is the denominator of the density formula. In a <strong>clique</strong>, then, the numerator and denominator will be the same, so the density will be 1. This illustrates that density is always between 0 and 1, where 0 is the lowest possible density and 1 is the highest.
 					</p>
 					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
 </p>
@@ -418,7 +476,7 @@ Given the human limitation on the number of sustainable connections, smaller net
 				<section>
 					<h2>Centrality: the importance of nodes</h2>
 					<p>
-					Centrality is one of the core principles of network analysis. It measures how “central” a node is in the network. This is used as an estimate of its importance in the network. However, depending on the application and point of view, what counts as “central” may vary depending on the context. Correspondingly, there are a number of ways to measure centrality of a node. 
+					Centrality is one of the core principles of network analysis. It measures <strong>how “central” a node is in the network</strong>. This is used as an estimate of its importance in the network. However, depending on the application and point of view, what counts as “central” may vary depending on the context. Correspondingly, there are <strong>a number of ways to measure centrality of a node</strong>. 
 <br><br>
 A node may appear highly central with one measure but have low centrality with another. That does not mean one measure is incorrect, though; they are simply different ways of describing nodes. The interpretation of the centrality measures is left to a human analyst.
 <br><br>
@@ -431,7 +489,7 @@ Also, the measures below are calculated for undirected, unweighted graphs. When 
 				<section>
 					<h2>Centrality: Degree</h2>
 					<p>
-					Many network properties describe how nodes are connected to one another and to the network as a whole. The simplest of these is degree. The degree of a node is the number of edges connected to that node. In undirected graphs, the degree of a node is simply the total number of edges connected to it. In directed graphs, there are two measures of degree: in-degree and out-degree. The in-degree is given by the number of edges coming into the node. In network diagrams, in-degrees are shown as edges with arrows pointing at the node. The out-degree is the number of edges originating from the node going outward to other nodes. These are shown with arrows pointing away from the node. The sum of the in-degree and out-degree gives you the total degree for the node.
+					Many network properties describe how nodes are connected to one another and to the network as a whole. The simplest of these is degree. The degree of a node is <strong>the number of edges connected to that node</strong>. In undirected graphs, the degree of a node is simply the total number of edges connected to it. In directed graphs, there are two measures of degree: in-degree and out-degree. The in-degree is given by the number of edges coming into the node. In network diagrams, in-degrees are shown as edges with arrows pointing at the node. The out-degree is the number of edges originating from the node going outward to other nodes. These are shown with arrows pointing away from the node. The sum of the in-degree and out-degree gives you the total degree for the node.
 <br><br>
 Degree centrality is a good measure of the total connections a node has, but will not necessarily indicate the importance of a node in connecting others or how central it is to the main group.
 					</p>
@@ -447,7 +505,7 @@ Degree centrality is a good measure of the total connections a node has, but wil
 				<section>
 					<h2>Centrality: Closeness</h2>
 					<p>
-					Closeness centrality indicates how close a node is to all other nodes in the network. It is calculated as the average of the shortest path length from the node to every other node in the network.
+					Closeness centrality indicates <strong>how close a node is to all other nodes in the network</strong>. It is calculated as the average of the shortest path length from the node to every other node in the network.
 <br><br>
 The benefits of closeness centrality are that it indicates nodes as more central if they are closer to most of the nodes in the graph. This strongly corresponds to visual centrality—a node that would appear toward the center of a graph when we draw it usually has a high closeness centrality.
 					</p>
@@ -463,7 +521,7 @@ The benefits of closeness centrality are that it indicates nodes as more central
 				<section>
 					<h2>Centrality: Betweenness</h2>
 					<p>
-					Betweenness centrality measures how important a node is to the shortest paths through the network. [...]It captures how important a node is in the flow of information from one part of the network to another.<br><br>
+					Betweenness centrality measures <strong>how important a node is to the shortest paths through the network</strong>. [...]It captures how important a node is in the flow of information from one part of the network to another.<br><br>
 In directed networks, betweenness can have several meanings. A user with high betweenness may be followed by many others who don’t follow the same people as the user. This would indicate that the user is well-followed. Alternatively, the user may have fewer followers, but connect them to many accounts that are otherwise distant. This would indicate that the user is a reader of many people. Understanding the direction of the edges for a node is important to understand the meaning of centrality.
 					</p>
 					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
@@ -478,7 +536,7 @@ In directed networks, betweenness can have several meanings. A user with high be
 				<section>
 					<h2>Centrality: Eigenvector</h2>
 					<p>
-					Eigenvector centrality measures a node’s importance while giving consideration to the importance of its neighbors. [...] It is sometimes used to measure a node’s influence in the network.<br><br>
+					Eigenvector centrality measures <strong>a node’s importance while giving consideration to the importance of its neighbors</strong>. [...] It is sometimes used to measure a node’s influence in the network.<br><br>
 The main principle is that links from important nodes (as measured by degree centrality) are worth more than links from unimportant nodes.
 					</p>
 					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
@@ -493,7 +551,7 @@ The main principle is that links from important nodes (as measured by degree cen
 				<section>
 					<h2>Centrality: Eccentricity</h2>
 					<p>
-					The eccentricity measure captures the distance between a node and the node that is furthest from it; so a high eccentricity means that the furthest away node in the network is a long way away, and a low eccentricity means that the furthest away node is actually quite close.
+					The eccentricity measure captures <strong>the distance between a node and the node that is furthest from it</strong>; so a high eccentricity means that the furthest away node in the network is a long way away, and a low eccentricity means that the furthest away node is actually quite close.
 					</p>
 					<p class="source">Source: <a href="http://blog.ouseful.info/2010/05/10/getting-started-with-gephi-network-visualisation-app-%E2%80%93-my-facebook-network-part-iii-ego-filters-and-simple-network-stats/">http://blog.ouseful.info/2010/05/10/getting-started-with-gephi-network-visualisation-app-%E2%80%93-my-facebook-network-part-iii-ego-filters-and-simple-network-stats/</a>
 </p>
@@ -529,7 +587,7 @@ The main principle is that links from important nodes (as measured by degree cen
 				<section>
 					<h2>Layouts: random algorithms</h2>
 					<p>
-					Note that many of these algorithms have some random features in them. They start with the nodes randomly placed and iteratively move them around into better positions. As a result, running the algorithm multiple times will produce graphs that look different. They will often be similar but may be positioned differently. Also, each iteration helps to improve the layout.
+					Note that many of these algorithms have some random features in them. They start with the nodes <strong>randomly placed and iteratively move them</strong> around into better positions. As a result, running the algorithm multiple times will produce graphs that look different. They will often be similar but may be positioned differently. Also, each iteration helps to improve the layout.
 					</p>
 					<p class="source">Source: Golbeck, Jennifer. Analyzing the Social Web. 1 edition. Morgan Kaufmann, 2013.
 </p>
@@ -595,10 +653,19 @@ The main principle is that links from important nodes (as measured by degree cen
 				</section>
 				
 				<section>
+					<h2>Networks dynamics: transitive triads</h2>
+					<p>
+					Another property of triads related to the balance hypothesis is transitivity: if actor P chooses actor O, and actor O chooses actor X, then P is likely to choose X. Intransitive triads are very rare.	
+					</p>
+					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
+</p>
+				</section>
+				
+				<section>
 					<h2>Networks dynamics: psychological motivations</h2>
 					<ul>
-						<li>getting things done < effectiveness drive (focus on holes)</li>
-						<li>community and social support < safety drive (focus on density)</li>
+						<li>getting things done < <strong>effectiveness</strong> drive (focus on holes)</li>
+						<li>community and social support < <strong>safety</strong> drive (focus on density)</li>
 					</ul>
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
@@ -607,9 +674,9 @@ The main principle is that links from important nodes (as measured by degree cen
 				<section>
 					<h2>Network dynamics: the effective person</h2>
 					<p>
-					The effective person does not want to be close to everyone, but only to some; other persons are pushed away or ignored. The effective person is not necessarily “nice.” She seeks control and profit rather than affiliation and equal exchange. Competition is a network aspect of effectiveness.
+					The effective person does not want to be close to everyone, but only to some; other persons are pushed away or ignored. The effective person is not necessarily “nice.” She seeks control and profit rather than affiliation and equal exchange. <strong>Competition</strong> is a network aspect of effectiveness.
 <br><br>
-Network theory further suggests that one competes with or tries to beat or at least keep up with those who are structurally isomorphic. Persons are structurally isomorphic if they have the same pattern of relations with other nodes—though not necessarily the same nodes, not necessarily connected.
+Network theory further suggests that one competes with or tries to beat or at least keep up with those who are <strong>structurally isomorphic</strong>. Persons are structurally isomorphic if they have the same pattern of relations with other nodes—though not necessarily the same nodes, not necessarily connected.
 					</p>
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
@@ -628,7 +695,7 @@ Cores possess whatever attributes are most valued by the network. The network is
 				<section>
 					<h2>Network dynamics: trust</h2>
 					<p>
-					The main difference between effectiveness networks and safety networks as ideal types is the location of trust. In safety networks, trust tends to be an attribute of the entire network, not just of the “player’s” side. In effectiveness networks, trust is present only to a limited degree between the player and the other who is the object of play.
+					The main difference between effectiveness networks and safety networks as ideal types is <strong>the location of trust</strong>. In safety networks, trust tends to be an attribute of the entire network, not just of the “player’s” side. In effectiveness networks, trust is present only to a limited degree between the player and the other who is the object of play.
 					</p>
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
@@ -650,7 +717,7 @@ Cores possess whatever attributes are most valued by the network. The network is
 				<section>
 					<h2>Size of a social network: Dunbar's number</h2>
 					<p>
-					One’s network size, either in terms of outreach or making connections within one’s immediate social environment, is bounded by human cognitive abilities. The average person historically has had a maximum effective network size of about 150, but that size appears to have doubled in current Western countries such as the United States.
+					One’s network size, either in terms of outreach or making connections within one’s immediate social environment, is bounded by human cognitive abilities. The average person historically has had a maximum effective network size of about <strong>150</strong>, but that size appears to have doubled in current Western countries such as the United States.
 					</p>
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
@@ -659,7 +726,7 @@ Cores possess whatever attributes are most valued by the network. The network is
 				<section>
 					<h2>Homophily: definition</h2>
 					<p>
-					More formally, if two people have characteristics that match in a proportion greater than expected in the population from which they are drawn or the network of which they are a part, then they are more likely to be connected. The converse is also true: if two people are connected, then they are more likely to have common characteristics or attributes. [...] Homophily is a process as well an outcome.
+					More formally, if two people have characteristics that match in a proportion greater than expected in the population from which they are drawn or the network of which they are a part, then they are more likely to be connected. The converse is also true: if two people are connected, then they are more likely to have common characteristics or attributes. [...] Homophily is <strong>a process as well an outcome</strong>.
 					</p>
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
@@ -676,53 +743,6 @@ Cores possess whatever attributes are most valued by the network. The network is
 					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
 </p>
 				</section>
-				
-				<section>
-					<h2>Importance of weak ties</h2>
-					<ul>
-					<li>weak ties facilitate the flow of information from otherwise-distant parts of a network. Individuals with few weak ties will be deprived of information from the distant parts of the social system and will be confined to the provincial news and views of their close friends</li>
-<li>weak ties help to integrate social systems. The macroscopic side of this communication argument is that social systems lacking in weak ties will be fragmented and incoherent</li>
-					</ul>
-					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
-</p>
-				</section>
-				
-				
-				<section>
-					<h2>Network: the concept</h2>
-					<p>
-					
-					</p>
-					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
-</p>
-				</section>
-				
-				<section>
-					<h2>Network: the concept</h2>
-					<p>
-					
-					</p>
-					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
-</p>
-				</section>
-				
-				<section>
-					<h2>Network: the concept</h2>
-					<p>
-					
-					</p>
-					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
-</p>
-				</section>
-				
-				<section>
-					<h2>Network: the concept</h2>
-					<p>
-					
-					</p>
-					<p class="source">Source: Kadushin, Charles. Understanding Social Networks: Theories, Concepts, and Findings. New York: Oxford University Press, 2012.
-</p>
-				</section>	
 				
 				<section>
 					<h1>6. Tools</h1>
@@ -904,6 +924,14 @@ Cores possess whatever attributes are most valued by the network. The network is
 					<img src="images/exxon.jpg">
 					</a>
 					<p class="source">Source: <a href="http://www.exxonsecrets.org/">http://www.exxonsecrets.org/</a></p>
+				</section>
+				
+				<section>
+					<h2>Linkedin Maps</h2>
+					<a href="http://inmaps.linkedinlabs.com/">
+					<img src="images/linkedin.jpg">
+					</a>
+					<p class="source">Source: <a href="http://inmaps.linkedinlabs.com/">http://inmaps.linkedinlabs.com/</a></p>
 				</section>
 				
 				<section>
