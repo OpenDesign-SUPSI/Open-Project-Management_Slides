@@ -3,7 +3,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Master in Advanced Interaction Design @ SUPSI</title>
+		<title>Open Project Management: E-mail Social Network Analysis</title>
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -38,51 +38,96 @@
 
 				<section>
 					<h1>Open Project Management</h1>
-					<h3>Massimo Menichinelli</h3>
-					<h3>2013-2014</h3>
-					<h3>Slides</h3>
-					<p>Source: <a href="https://github.com/OpenDesign-SUPSI/Open-Project-Management_Slides">on GitHub</a></p>
+					<h3>25 February 2014</h3>
 				</section>
 				
 				<section>
-					<h2>Course structure</h2>
+					<h3>1. E-mail SNA</h3>
+					<h3>2. Exercise</h3>
+				</section>
+				
+				<section>
+					<h1>1. E-mail SNA</h1>
+				</section>
+				
+				<section>
+					<h2>Import e-mail into Gephi</h2>
+					<img src="images/spigot.jpg">
+				</section>
+				
+				<section>
+					<h2>Workflow: Thunderbird</h2>
+					<a href="https://www.mozilla.org/en-US/thunderbird/?flang=en"><img src="images/thunderbird.jpg">
+					</a>
+					<p class="source">Source: <a href="https://www.mozilla.org/en-US/thunderbird/?flang=en">https://www.mozilla.org/en-US/thunderbird/?flang=en</a></p>
+				</section>
+				
+				<section>
+					<h2>Workflow: Thunderbird Import-Export tool</h2>
+					<a href="https://addons.mozilla.org/en-US/thunderbird/addon/importexporttools/"><img src="images/importexport.jpg">
+					</a>
+					<p class="source">Source: <a href="https://addons.mozilla.org/en-US/thunderbird/addon/importexporttools/">https://addons.mozilla.org/en-US/thunderbird/addon/importexporttools/</a></p>
+				</section>
+				
+				<section>
+					<h2>Workflow: Hackerspaces (example)</h2>
+					<a href="http://hackerspaces.org/wiki/Communication"><img src="images/hackerspaces.jpg">
+					</a>
+					<p class="source">Source: <a href="http://hackerspaces.org/wiki/Communication">http://hackerspaces.org/wiki/Communication</a></p>
+				</section>
+				
+				<section>
+					<h2>Workflow: Register to Hackerspaces Mailman (example)</h2>
+					<a href="http://lists.hackerspaces.org/mailman/listinfo/discuss"><img src="images/hackerspaces-mailman.jpg">
+					</a>
+					<p class="source">Source: <a href="http://lists.hackerspaces.org/mailman/listinfo/discuss">http://lists.hackerspaces.org/mailman/listinfo/discuss</a></p>
+				</section>
+				
+				<section>
+					<h2>Install wget</h2>
+					<pre><code data-trim class="python">
+					brew install wget
+					</code></pre>
+				</section>
+				
+				<section>
+					<h2>Download the .mbox</h2>
+					<pre>
+					wget 'http://lists.hackerspaces.org/mailman/private/discuss.mbox/discuss.mbox?username=YOUREMAIL&password=PASSWORD' -O hackerspace.mbox
+					</pre>
+				</section>
+			
+
+				<section>
+					<h1>2. Exercise</h1>
+				</section>
+				
+				<section>
+					<h2>Exercise: analyse a mailing list</h2>
 					<ol>
-						<li><strong>30/01</strong>: Business Model of Open Design <a href="00_30Jan14.html">Slides</a> / Practice: Open Business Model </li>
-						<li><strong>06/02</strong>: Practice: Open Business Model / Setup for Social Network Analysis: <a href="01_06Feb14.html">Slides</a></li>
-						<li><strong>13/02</strong>: Social Network Analysis: the basics <a href="02_13Feb14.html">Slides</a></li>
-						<li><strong>25/02</strong>: Practice: Analyse Facebook <a href="03_25Feb14.html">Slides</a></li>
-						<li><strong>06/03</strong>: Practice: Analyse e-mail and mailing list <a href="04_06Mar14.html">Slides</a></li>
-						<li><strong>13/03</strong>: Practice: Analyse GitHub. <a href="#">Slides available soon</a></li>
-						<li><strong>17/03</strong>: Examination.</li>
+						<li>Analyze Degree, Betweenness, Closeness, Eigenvector. Modularity with 5 maps</li>
+						<li>Write a 2 page report (with images)</li>
+						<li>Send it to info@openp2pdesign.org</li>
 					</ol>
 				</section>
 				
 				<section>
-					<h2>Where we will work together</h2>
-					<a href="https://github.com/organizations/OpenDesign-SUPSI">
-					<img src="images/ourgroup.jpg">
-					</a>
-					<p class="source">Source: <a href="https://github.com/organizations/OpenDesign-SUPSI">https://github.com/organizations/OpenDesign-SUPSI</a></p>
-				</section>
-				
-				<section>
-					<h2>Where to find the slides</h2>
-					<a href="https://github.com/OpenDesign-SUPSI/Open-Project-Management_Slides">
-					<img src="images/slidesrepo.jpg">
-					</a>
-					<p class="source">Source: <a href="https://github.com/OpenDesign-SUPSI/Open-Project-Management_Slides">https://github.com/OpenDesign-SUPSI/Open-Project-Management_Slides</a></p>
-				</section>
-				
-				<section>
-					<h2>Where to find the slides</h2>
-					<a href="http://supsi.openp2pdesign.org/2013-2014/Open-Project-Management_Slides/">
-					<img src="images/slidesrepo01.jpg">
-					</a>
-					<p class="source">Source: <a href="http://supsi.openp2pdesign.org/2013-2014/Open-Project-Management_Slides/">http://supsi.openp2pdesign.org/2013-2014/Open-Project-Management_Slides/</a></p>
+					<h2>Exercise: examples of mailing lists</h2>
+					<ol>
+						<li>
+<a href="http://lists.blender.org/mailman/listinfo/">http://lists.blender.org/mailman/listinfo/</a></li>
+						<li><a href="https://lists.sourceforge.net/lists/listinfo/inkscape-devel">https://lists.sourceforge.net/lists/listinfo/inkscape-devel</a>
+
+</li>
+						<li><a href="http://lists.scribus.net/mailman/listinfo/scribus">http://lists.scribus.net/mailman/listinfo/scribus</a></li>
+						<li>
+<a href="https://lists.okfn.org/mailman/listinfo">https://lists.okfn.org/mailman/listinfo</a></li>
+					</ol>
 				</section>
 
+
 				<section>
-					<h1>Contacts</h1>
+					<h1>Thank you!</h1>
 					<p>
 						<small><a href="http://openp2pdesign.org">Massimo Menichinelli</a> / <a href="mailto:info@openp2pdesign.org">info@openp2pdesign.org</a> / <a href="http://twitter.com/openp2pdesign">@openp2pdesign</a></small>
 					</p>
@@ -95,7 +140,7 @@
   		<p style="font-size: 12px !important;">
 		<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.
 		</p>
-		<p style="font-size: 12px !important;">Massimo Menichinelli - 2013-2014<br>
+		<p style="font-size: 12px !important;">Massimo Menichinelli - 2013<br>
 		<a href="http://openp2pdesign.org">openp2pdesign.org</a></p>
 	</div>
 	<div class="supsi">
